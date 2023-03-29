@@ -1,0 +1,70 @@
+.textActor {
+	font-size: 40px;
+	color: #ffffff;
+	text-align: center;
+	font-weight: bold;
+	margin-top: 100px;
+}
+
+.locandinaActors {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	height: auto;
+	overflow: hidden;
+  }
+
+  .locandinaActors img {
+	width: 100%;
+	height: auto;
+  }
+
+.actors_desc {
+	padding: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+    justify-content: center;
+}
+
+
+.info_section.actors {
+	background: white;
+}
+
+.h1-actorDetails {
+	text-align: center;
+	color: #ffffff;
+}
+
+.h4-actorDetails {
+	text-align: center;
+	color: #ffffff;
+}
+
+.actorBio {
+	color: #ffffff;
+	text-align: center;
+	 margin-right: 15vw;
+	 margin-left: 15vw;
+}
+
+.movie_header_actor {
+	color: #ffffff;
+	text-align: center;
+	margin-top: 200px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+	.movie_desc {
+		width: 100%;
+		color: #ffffff;
+	}
+
+	.info_section {
+		background: white;
+	}
+}

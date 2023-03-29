@@ -1,0 +1,49 @@
+$font-1: "Monserrat", sans-serif;
+$color-1: #A5BECC;
+$color-2: #243A73;
+$color-3: #F2EBE9;
+$color-4: #808080;
+
+body {
+font-family: $font-1;
+background-color: $color-2;
+display: flex;
+flex-direction: column;
+margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.carousel-container {
+    margin-top: 50px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1.h1-caroussels {
+    text-align: center;
+    color: #f3ebe9;
+    margin-top: 50px;
+    font-size: 50px;
+  }
+  
+  @media only screen and (max-width: 1080px) {
+    h1.h1-caroussels {
+      font-size: 40px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    h1.h1-caroussels {
+      font-size: 30px;
+    }
+  }
+
+  .movie-carousel-title {
+    color: #f3ebe9;
+    height: 45px;
+  }
+

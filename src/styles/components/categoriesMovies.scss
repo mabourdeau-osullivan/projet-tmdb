@@ -1,0 +1,41 @@
+.categoriesMovies {
+  overflow: hidden;
+
+  .titleCategory {
+    text-align: center;
+  }
+
+  .sort-container {
+    display: flex;
+    padding: 8px;
+    border-radius: 15px;
+    color: $color-1;
+    width: 100%;
+  }
+
+  select {
+    width: 400px;
+    margin: 0 auto;
+    background-color: #f3ebe9b1;
+    color: rgb(0, 0, 0);
+    height: 40px;
+    margin-top: 190px;
+    border-radius: 10px;
+  }
+  
+
+  .categoriesMovies-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+
+  .placeholder-container{
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+
+  }
+}

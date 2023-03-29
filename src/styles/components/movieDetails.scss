@@ -1,0 +1,114 @@
+.textActor {
+	text-align: center;
+	font-weight: bold;
+}
+
+.locandina-m {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 500px;
+}
+
+.movie_header{
+	background-repeat: no-repeat;
+	width: 100%;
+	padding: 6.5em 0;
+	background-image: url("https://image.tmdb.org/t/p/original/${detail.backdrop_path}");
+	background-size: cover;
+	background-position: center;
+	border-top: 5px solid #555;
+	border-bottom: 5px solid #555;
+	margin-top: 65px;
+}
+
+
+.actors_desc {
+	padding: 30px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.movie_desc {
+	background-color: #a5becc;
+	height: 200px;
+	text-align: center;
+	width: 80%;
+	color: #000000;
+}
+
+.info_section {
+	background: white;
+}
+
+.h1-movieDetails {
+	color: #ffffff;
+	display: flex;
+	margin-left: 25px;
+	margin-top: 200px;
+}
+
+.h4-movieDetails {
+	color: #ffffff;
+	margin-left: 25px;
+}
+
+#myStarRating {
+	justify-content: right;
+	position: absolute;
+	right: 0;
+	margin-right: 35px;
+  }
+
+hr {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 190px;
+	margin-top: 260px;
+	margin-right: 25px;
+}
+
+.type {
+	text-align: center;
+	color: white;
+}
+
+.leading-cast-name {
+	color: #ffffff;
+	text-align: center;
+}
+
+
+
+
+
+
+@media screen and (max-width: 850px) {
+
+	.movie_desc {
+		width: 100%;
+		color: #ffffff;
+	}
+
+	.info_section {
+		background: white;
+	}
+	#myStarRating {
+		display: none;
+	}
+	hr {
+		display: none;
+	}
+	.h1-movieDetails {
+		display: block;
+		color: #ffffff;
+		text-align: center;
+	  }
+	
+	  .h4-movieDetails {
+		display: block;
+		color: #ffffff;
+		text-align: center;
+	  }
+}

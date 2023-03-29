@@ -1,0 +1,21 @@
+.popularMovies-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.popularMovies {
+    height: 425px;
+    margin: auto;
+    margin-top: 300px;
+    margin-bottom: 75px;
+  }
+
+  .movie-carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.movie-carousel-item:hover img {
+    transform: scale(0.90);
+    transition: transform 0.7s ease;
+}
