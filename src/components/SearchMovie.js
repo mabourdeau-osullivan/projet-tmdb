@@ -17,7 +17,7 @@ const SearchMovie = () => {
             setData(res.data.results);
             setTotalPages(res.data.total_pages);
         });
-    }, [query]);
+    }, [query, URL]);
 
     useEffect(() => {
         const requests = [];
