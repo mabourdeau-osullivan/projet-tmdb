@@ -15,7 +15,7 @@ const MovieDetails = (props) => {
     const [detail, setDetail] = useState({});
     const [genres, setGenres] = useState([]);
     const [credits, setCredits] = useState([]);
-    const [trailerKey, setTrailerKey] = useState("");
+    const [, setTrailerKey] = useState("");
     const [videoUrl, setVideoUrl] = useState("");
     const history = useHistory();
 
