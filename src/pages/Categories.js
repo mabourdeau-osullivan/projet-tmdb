@@ -1,11 +1,11 @@
 import React from "react";
 import Navigation from "../components/Navigation";
 import CategoriesMovies from "../components/CategoriesMovies";
-import ActionMovies from "../components/Carousels/Action";
-import AdventureMovies from "../components/Carousels/Action";
-import ComedyMovies from "../components/Carousels/Action";
-import DramaMovies from "../components/Carousels/Action";
-import ThrillerMovies from "../components/Carousels/Action";
+import Action from "../components/Carousels/Action";
+import Adventure from "../components/Carousels/Adventure";
+import Comedy from "../components/Carousels/Comedy";
+import Drama from "../components/Carousels/Drama";
+import Thriller from "../components/Carousels/Thriller";
 import Footer from "../components/Footer";
 
 const Categories = (props) => {
@@ -16,11 +16,11 @@ const Categories = (props) => {
         <div className="categories">
             <Navigation />
             <CategoriesMovies idGenre={id} nameGenre={name} />
-            <ActionMovies />
-            <AdventureMovies />
-            <ComedyMovies />
-            <DramaMovies />
-            <ThrillerMovies />
+            <Action />
+            <Adventure />
+            <Comedy />
+            <Drama />
+            <Thriller />
             <Footer />
         </div>
     )

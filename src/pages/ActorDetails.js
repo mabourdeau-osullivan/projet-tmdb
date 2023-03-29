@@ -12,7 +12,7 @@ const ActorDetails = (props) => {
     axios.get(URL).then((res) => {
       setDetail(res.data);
     });
-  }, [id, URL]);
+  }, [id]);
 
   return (
     <div className="actor-details">

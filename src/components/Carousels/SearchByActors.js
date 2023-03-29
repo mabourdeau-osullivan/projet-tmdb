@@ -13,7 +13,7 @@ const SearchByActors = () => {
 
   useEffect(() => {
     axios.get(URL).then((res) => setActors(res.data.results));
-  }, [URL]);
+  }, []);
 
   const responsive = {
     desktop: {
