@@ -8,14 +8,12 @@ const Footer = () => {
       </div>
       <div className="footer-columns">
         <div className="footer-column1">
-          <p className="footer-text">Home page</p>
-          <p className="footer-text">Search</p>
-          <p className="footer-text">Movies</p>
+          <p className="footer-text"><a href="/">Home page</a></p>
+          <p className="footer-text"><a href="/search">Search</a></p>
         </div>
         <div className="footer-column2">
-          <p className="footer-text">Categories</p>
-          <p className="footer-text">About</p>
-          <p className="footer-text">Actors</p>
+          <p className="footer-text"><a href="/categories">Categories</a></p>
+          <p className="footer-text"><a href="/">Movies</a></p>
         </div>
       </div>
       <div className="copyright">Copyright © 2023 cinemacraze.ca</div>

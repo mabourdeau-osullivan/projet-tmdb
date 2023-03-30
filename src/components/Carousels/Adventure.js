@@ -7,13 +7,26 @@ import "react-multi-carousel/lib/styles.css";
 
 const AdventureMovies = () => {
     const [adventure, setAdventure] = useState([]);
-    const URL =
-        "https://api.themoviedb.org/3/discover/movie?api_key=8434a0b660ab72dea068e0d5edd42503&with_genres=12";
     const history = useHistory();
 
     useEffect(() => {
-        axios.get(URL).then((res) => setAdventure(res.data.results));
+        const fetchData = async () => {
+            let allActionMovies = [];
+            for (let page = 2; page <= 10; page++) {
+                const URL = `https://api.themoviedb.org/3/discover/movie?api_key=8434a0b660ab72dea068e0d5edd42503&with_genres=12&page=${page}`;
+                const res = await axios.get(URL);
+                allActionMovies = allActionMovies.concat(res.data.results);
+            }
+            setAdventure(allActionMovies);
+        };
+        fetchData();
     }, []);
+
+
+
+
+
+
 
     const responsive = {
         desktop: {

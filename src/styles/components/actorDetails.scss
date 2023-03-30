@@ -21,7 +21,7 @@
   }
 
 .actors_desc {
-	padding: 30px;
+	padding: 0px 30px 50px 30px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -43,17 +43,31 @@
 	color: #ffffff;
 }
 
-.actorBio {
-	color: #ffffff;
-	text-align: center;
-	 margin-right: 15vw;
-	 margin-left: 15vw;
-}
-
 .movie_header_actor {
 	color: #ffffff;
 	text-align: center;
 	margin-top: 200px;
+}
+
+.actorBio {
+	background-color: #f3ebe9e2;
+	max-width: 100%;
+	text-align: center;
+	height: 350px;
+}
+
+.biography-title {
+	padding-top: 40px;
+	margin-top: 80px;
+	color: black;
+	font-size: 45px;
+	z-index: 30;
+}
+
+.text {
+	color: black;
+	font-size: 22px;
+	margin: 35px 20% 0px 20%;
 }
 
 

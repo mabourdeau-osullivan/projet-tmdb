@@ -74,8 +74,8 @@ const MovieDetails = (props) => {
                     >{g.name}</p>
                 )
             })}
-            <div className="movie_desc">
-                <p className="text">{detail.overview}</p>
+            <div className="movie_desc"> SYNOPSIS
+                <div className="text-movies">{detail.overview}</div>
             </div>
 
 

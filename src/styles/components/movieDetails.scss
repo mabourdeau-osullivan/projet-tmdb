@@ -30,11 +30,10 @@
 }
 
 .movie_desc {
-	background-color: #a5becc;
-	height: 200px;
+	font-size: 60px;
+	margin-top: 20px;
 	text-align: center;
-	width: 80%;
-	color: #000000;
+	color: #ffffff;
 }
 
 .info_section {
@@ -68,15 +67,28 @@ hr {
 	margin-top: 260px;
 	margin-right: 25px;
 }
-
-.type {
-	text-align: center;
+  
+  .type {
+	margin-left: 28px;
+	display: inline-block;
+	font-size: 20px;
 	color: white;
+	margin-right: 10px;
+	vertical-align: middle;
+  }
+  
+.type:hover {
+	cursor: pointer;
 }
 
 .leading-cast-name {
 	color: #ffffff;
 	text-align: center;
+}
+
+.text-movies {
+	font-size: 25px;
+	margin: 50px 20% 50px 20%;
 }
 
 

@@ -29,11 +29,6 @@ const Navigation = () => {
                                 Categories
                             </NavLink>
                         </li>
-                        <li>
-                            <NavLink to="/about" activeClassName="active" className="nav-link">
-                                About
-                            </NavLink>
-                        </li>
                     </ul>
                 </div>
             </nav>

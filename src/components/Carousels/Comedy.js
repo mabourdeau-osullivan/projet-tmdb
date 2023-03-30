@@ -7,13 +7,20 @@ import "react-multi-carousel/lib/styles.css";
 
 const ComedyMovies = () => {
     // Backend
-    const [action, setAction] = useState([]);
-    const URL =
-        "https://api.themoviedb.org/3/discover/movie?api_key=8434a0b660ab72dea068e0d5edd42503&with_genres=28";
+    const [action, setComedy] = useState([]);
     const history = useHistory();
 
     useEffect(() => {
-        axios.get(URL).then((res) => setAction(res.data.results));
+        const fetchData = async () => {
+            let allActionMovies = [];
+            for (let page = 2; page <= 10; page++) {
+                const URL = `https://api.themoviedb.org/3/discover/movie?api_key=8434a0b660ab72dea068e0d5edd42503&with_genres=35&page=${page}`;
+                const res = await axios.get(URL);
+                allActionMovies = allActionMovies.concat(res.data.results);
+            }
+            setComedy(allActionMovies);
+        };
+        fetchData();
     }, []);
 
     // Responsive carousel configuration

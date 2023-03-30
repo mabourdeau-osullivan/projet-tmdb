@@ -30,7 +30,8 @@ const ActorDetails = (props) => {
             </span>
           </div>
           <div className="actorBio">
-            <p className="text">{detail.biography}</p>
+            <div className="biography-title"><strong>biography</strong></div>
+            <div className="text">{detail.biography}</div>
           </div>
         </div>
       </div>
